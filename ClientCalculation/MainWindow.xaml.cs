@@ -55,7 +55,7 @@ namespace ClientCalculation
                 if (tbRadius.Text != String.Empty)
                 {
                     Circle circle = new Circle(double.Parse(tbRadius.Text));
-                    tbResult.Text = circle.AreaCalculation()[0];
+                    tbResult.Text = circle.Calculation()[0];
                     lResult.Content = "Площадь Круга";
                 }
                 else
@@ -69,8 +69,8 @@ namespace ClientCalculation
                 if (tbSideX.Text != String.Empty || tbSideY.Text != String.Empty || tbSideZ.Text != String.Empty)
                 {
                     Triangle triangle = new Triangle(double.Parse(tbSideX.Text), double.Parse(tbSideY.Text), double.Parse(tbSideZ.Text));
-                    tbResult.Text = triangle.AreaCalculation()[0];
-                    lResult.Content = triangle.AreaCalculation()[1];
+                    tbResult.Text = triangle.Calculation()[0];
+                    lResult.Content = triangle.Calculation()[1];
                 }
                 else
                 {

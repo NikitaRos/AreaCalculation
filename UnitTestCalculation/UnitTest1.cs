@@ -1,5 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+﻿using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using AreaCalculation;
 using System.Collections.Generic;
 
@@ -15,7 +15,7 @@ namespace UnitTestCalculation
             Circle c = new Circle(x);
                         
             string answer = "78,54";
-            List<string> test = c.AreaCalculation();
+            List<String> test = c.Calculation();
 
             Assert.AreEqual(answer, test[0], "test is not correct");
         }
@@ -29,7 +29,7 @@ namespace UnitTestCalculation
             Triangle t = new Triangle(x, y, z);
 
             string answer = "75";
-            List<string> test = t.AreaCalculation();
+            List<String> test = t.Calculation();
 
             Assert.AreEqual(answer, test[0], "test is not correct");
         }
@@ -43,7 +43,7 @@ namespace UnitTestCalculation
             Triangle t = new Triangle(x, y, z);
 
             string answer = "30";
-            List<string> test = t.AreaCalculation();
+            List<String> test = t.Calculation();
 
             Assert.AreEqual(answer, test[0], "test is not correct");
         }

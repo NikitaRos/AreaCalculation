@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
 
 namespace AreaCalculation
 {
@@ -13,9 +12,9 @@ namespace AreaCalculation
             this.r = r;        
         }
 
-        public List<string> AreaCalculation()
+        public List<String> Calculation()
         {
-            List<string> result = new List<string>();
+            List<String> result = new List<String>();
             result.Clear();
 
             var S = Math.PI * Math.Pow(r, 2);

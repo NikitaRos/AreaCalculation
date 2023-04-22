@@ -1,9 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AreaCalculation
 {
@@ -20,9 +16,9 @@ namespace AreaCalculation
             this.z = z;
         }
         
-        public List<string> AreaCalculation()
+        public List<String> Calculation()
         {
-            List<string> result = new List<String>();
+            List<String> result = new List<String>();
             result.Clear();
             double S;
             double p = (x + y + z) / 2;
